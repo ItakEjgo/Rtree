@@ -45,4 +45,10 @@ public:
 
 	//extend the hypercube in each dimension
 	void extend(vector<db> a_sidelen);
+
+	//the volume of a this hypercube
+	db volume();
+
+	//the perimeter of this hypercube
+	db perimeter();
 };

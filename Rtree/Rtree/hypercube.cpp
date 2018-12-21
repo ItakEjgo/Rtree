@@ -99,3 +99,20 @@ void Hypercube::extend(vector<db> a_sidelen) {
 		m_upper.m_value[i] += a_sidelen[i];
 	}
 }
+
+db Hypercube::volume() {
+	db ret = 1.0;
+	for (unsigned int i = 0; i < DIMENSION; i++) {
+		ret *= (m_upper.m_value[i] - m_lower.m_value[i]);
+	}
+	return ret;
+}
+
+db Hypercube::perimeter() {
+	db ret = 0;
+	for (unsigned int i = 0; i < DIMENSION; i++) {
+		ret += (m_upper.m_value[i] - m_lower.m_value[i]);
+	}
+	ret *= pow(2.0, DIMENSION - 1);
+	return ret;
+}

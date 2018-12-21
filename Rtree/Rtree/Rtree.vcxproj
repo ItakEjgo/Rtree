@@ -118,12 +118,16 @@
     <ClInclude Include="base.h" />
     <ClInclude Include="hypercube.h" />
     <ClInclude Include="point.h" />
+    <ClInclude Include="rentry.h" />
+    <ClInclude Include="rnode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base.cpp" />
     <ClCompile Include="hypercube.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="point.cpp" />
+    <ClCompile Include="rentry.cpp" />
+    <ClCompile Include="rnode.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

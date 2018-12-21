@@ -24,6 +24,12 @@
     <ClInclude Include="hypercube.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="rentry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rnode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +42,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="hypercube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rentry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rnode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

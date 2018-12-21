@@ -4,7 +4,7 @@
 class Point {
 //data member
 public:
-	vector<db> m_value;
+	vector<db> m_value; //the value in each dimension
 
 //public functions
 public:
