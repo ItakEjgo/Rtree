@@ -120,6 +120,7 @@
     <ClInclude Include="point.h" />
     <ClInclude Include="rentry.h" />
     <ClInclude Include="rnode.h" />
+    <ClInclude Include="rtree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base.cpp" />
@@ -128,6 +129,7 @@
     <ClCompile Include="point.cpp" />
     <ClCompile Include="rentry.cpp" />
     <ClCompile Include="rnode.cpp" />
+    <ClCompile Include="rtree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

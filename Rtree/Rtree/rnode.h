@@ -41,9 +41,8 @@ public:
 	//generate the new entry of this node
 	Rentry generate_entry();
 
-	//status check
 	//***** Important ****
-	int insert_status_check(const Rentry &a_entry);
-	int remove_status_check(const Rentry &a_entry);
-	int replac_status_check(const Rentry &a_entry);
+	int insert(const Rentry &a_entry);
+	int remove(const Rentry &a_entry);
+	int replace(const Rentry &a_entry);
 };
