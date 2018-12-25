@@ -45,4 +45,7 @@ public:
 	int insert(const Rentry &a_entry);
 	int remove(const Rentry &a_entry);
 	int replace(const Rentry &a_entry);
+	
+	virtual int toMem(char* a_content, int& a_len) const;
+	virtual Rnode fromMem(const char* a_p, int& a_len, const Rtree* a_rtree, Rentry* (*fromMem)(const char* a_mem, int& a_len, const int a_dimen, const bool a_is_point));
 };

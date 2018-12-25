@@ -86,3 +86,16 @@ int Rnode::replace(const Rentry &a_entry) {
 	}
 	return status;
 }
+
+int Rnode::toMem(char* a_content, int& a_len) {
+	memcpy(&a_content[a_len], &m_pageid, sizeof(m_pageid));
+	a_len += sizeof(m_pageid);
+	memcpy(&a_content[a_len], &m_level, sizeof(m_level));
+	a_len += sizeof(m_level);
+	memcpy(&a_content[a_len], &m_parent, sizeof(m_parent));
+	a_len += sizeof(m_parent);
+	for (unsigned int i = 0; i < m_entries.size(); i++) {
+		int elen = 0;
+		m_entries[i]
+	}
+}
